@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "c1331357-bb22-4fb6-b4dd-5b41e1592e34",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29796029"
+	},
+	"item": [
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "http://localhost:9191/api/departments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"departmentName\":\"Electrical & Electronics Engineering\",\r\n    \"departmentCode\":\"EEE\",\r\n    \"departmentDescription\":\"Electrical & Electronics  Engineering for IT companies\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9191/api/departments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9191",
+							"path": [
+								"api",
+								"departments"
+							]
+						},
+						"description": "For departments"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9191/api/employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Mastan\",\r\n    \"lastName\":\"Shaik\",\r\n    \"email\":\"mastan@gmail.com\",\r\n    \"departmentCode\":\"ECE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"employees"
+					]
+				},
+				"description": "To create employee"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/employees/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/employees/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"employees",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

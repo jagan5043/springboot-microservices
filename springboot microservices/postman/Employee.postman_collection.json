@@ -38,6 +38,14 @@
 						"description": "For departments"
 					},
 					"response": []
+				},
+				{
+					"name": "Department Message API",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			]
 		},
@@ -87,6 +95,34 @@
 						"api",
 						"employees",
 						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Message API",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Bus Refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/actuator/busrefresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"busrefresh"
 					]
 				}
 			},

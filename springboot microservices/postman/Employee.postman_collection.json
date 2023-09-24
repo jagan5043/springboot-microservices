@@ -50,7 +50,36 @@
 			]
 		},
 		{
-			"name": "http://localhost:9191/api/employees",
+			"name": "Organization",
+			"item": [
+				{
+					"name": "create organization",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "getOrganizationByCode",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "getOrganizationByAPIGateway",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "createEmployee",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -80,7 +109,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/employees/5",
+			"name": "getEmployeeById",
 			"request": {
 				"method": "GET",
 				"header": [],
